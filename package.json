@@ -1,6 +1,6 @@
 {
   "name": "kalman-vue3-icon",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Kalman Vue Icon, Automation workflow with Figma",
   "files": [
     "dist/*",
@@ -23,6 +23,7 @@
     "dev": "vite",
     "generate": "sudo rm -rf src/icons && node bin/build.js",
     "build": "vue-tsc --noEmit && vite build",
+    "build:bundle": "vue-tsc --noEmit && vite build --config bundle.config.ts",
     "preview": "vite preview"
   },
   "dependencies": {

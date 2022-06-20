@@ -26,11 +26,11 @@ jobs:
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
     - run: yarn generate
     - run: yarn build
-    # - run: yarn build-bundle
+    - run: yarn build:bundle
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.2.5
       with:
-        build_dir: dist
+        build_dir: bundle
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
