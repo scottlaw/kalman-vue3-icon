@@ -56,7 +56,7 @@ const generateIconCode = async ({name}) => {
 
 // append export code to index.js
 const appendToIndex = ({ComponentName, name}) => {
-  const exportString = `export Icon${ComponentName} from './icons/${name}.vue';\r\nexport { Icon${ComponentName} }\r\n`;
+  const exportString = `import Icon${ComponentName} from './icons/${name}.vue';\r\nexport { Icon${ComponentName} }\r\n`;
   fs.appendFileSync(
     path.join(rootDir, 'src', 'index.ts'),
     exportString,

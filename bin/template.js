@@ -28,19 +28,20 @@ const getElementCode = (ComponentName, attrs, svgCode) => `
     </svg>
   </template>
   <script>
-    export default {
-      name: "Icon${ComponentName}",
-      props: {
-        size: {
-          type: Number,
-          default: 24
-        },
-        color: {
-          type: String,
-          default: "currentColor"
-        }
+  import { defineComponent } from 'vue'
+  export default defineComponent({
+    name: "Icon${ComponentName}",
+    props: {
+      size: {
+        type: Number,
+        default: 24
+      },
+      color: {
+        type: String,
+        default: "currentColor"
       }
-    };
+    }
+  })
   </script>
 `
 

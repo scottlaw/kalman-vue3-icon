@@ -7,17 +7,18 @@
     </svg>
   </template>
   <script>
-    export default {
-      name: "IconFilter",
-      props: {
-        size: {
-          type: Number,
-          default: 24
-        },
-        color: {
-          type: String,
-          default: "currentColor"
-        }
+  import { defineComponent } from 'vue'
+  export default defineComponent({
+    name: "IconFilter",
+    props: {
+      size: {
+        type: Number,
+        default: 24
+      },
+      color: {
+        type: String,
+        default: "currentColor"
       }
-    };
+    }
+  })
   </script>
