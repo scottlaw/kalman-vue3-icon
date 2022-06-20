@@ -24,6 +24,7 @@ const generateIndex = () => {
   }
 
   fs.writeFileSync(path.join(rootDir, 'src', 'index.ts'), '', 'utf-8');
+  fs.writeFileSync(path.join(rootDir, 'src', 'index.d.ts'), '', 'utf-8');
 }
 
 // generate attributes code
@@ -59,6 +60,11 @@ const appendToIndex = ({ComponentName, name}) => {
   const exportString = `import Icon${ComponentName} from './icons/${name}.vue';\r\nexport { Icon${ComponentName} }\r\n`;
   fs.appendFileSync(
     path.join(rootDir, 'src', 'index.ts'),
+    exportString,
+    'utf-8',
+  );
+  fs.appendFileSync(
+    path.join(rootDir, 'src', 'index.d.ts'),
     exportString,
     'utf-8',
   );
