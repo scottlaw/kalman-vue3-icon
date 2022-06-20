@@ -2,8 +2,8 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
-// import IconCircle from './icons/circle.vue'
-import { IconCircle } from '../dist/kalman-icon.es.ts'
+import IconCircle from './icons/circle.vue'
+// import { IconCircle } from '../dist/kalman-icon.es.ts'
 </script>
 
 <template>

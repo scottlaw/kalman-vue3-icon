@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'kalman-vue3-icon',
-      fileName: (format) => `kalman-icon.${format}.ts`
+      name: 'KalmanIcon',
+      fileName: (format) => `index.${format}.ts`
     },
     rollupOptions: {
       external: ['vue'],
