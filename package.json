@@ -1,6 +1,6 @@
 {
   "name": "kalman-vue3-icon",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Kalman Vue Icon, Automation workflow with Figma",
   "files": [
     "dist/*",
