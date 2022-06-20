@@ -3,12 +3,12 @@
     <svg
       xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" aria-hidden="true" :stroke="color" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
     >
-      <path fillRule="evenodd" clipRule="evenodd" d="M12 3a9 9 0 100 18 9 9 0 000-18zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"></path>
+      <path fillRule="evenodd" clipRule="evenodd" d="M1.093 2.58A1 1 0 012 2h20a1 1 0 01.764 1.646L15 12.826V21a1 1 0 01-1.447.894l-4-2A1 1 0 019 19v-6.174l-7.764-9.18a1 1 0 01-.143-1.067zM4.155 4l6.609 7.814a1 1 0 01.236.646v5.922l2 1V12.46a1 1 0 01.236-.646L19.845 4H4.155z"></path>
     </svg>
   </template>
   <script>
     export default {
-      name: "IconCircle",
+      name: "IconFilter",
       props: {
         size: {
           type: Number,
