@@ -1,12 +1,16 @@
 {
   "name": "kalman-vue3-icon",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Kalman Vue Icon, Automation workflow with Figma",
   "files": [
-    "dist"
+    "dist",
+    "src/index.ts"
   ],
-  "module": "./dist/kalman-icon.es.ts",
+  ,
+  "types": "kalman-icon.d.ts",
+  "files": ["dist/*", "kalman-icon.d.ts"],
   "main": "./dist/kalman-icon.umd.ts",
+  "module": "./dist/kalman-icon.es.ts",
   "exports": {
     ".": {
       "import": "./dist/kalman-icon.es.ts",
