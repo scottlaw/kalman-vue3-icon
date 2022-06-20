@@ -6,7 +6,6 @@
     "dist",
     "src/index.ts"
   ],
-  ,
   "types": "kalman-icon.d.ts",
   "files": ["dist/*", "kalman-icon.d.ts"],
   "main": "./dist/kalman-icon.umd.ts",
