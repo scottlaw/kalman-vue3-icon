@@ -4,7 +4,8 @@ const getAttrs = (style) => {
     ':width': 'size',
     ':height': 'size',
     'viewBox': '0 0 24 24',
-    'aria-hidden': 'true'
+    'aria-hidden': 'true',
+    'class': 'kalman-icon'
   }
   const fillAttrs = {
     ':fill': 'color'
@@ -33,8 +34,8 @@ const getElementCode = (ComponentName, attrs, svgCode) => `
     name: "${ComponentName}",
     props: {
       size: {
-        type: Number,
-        default: 24
+        type: String,
+        default: "1.5rem"
       },
       color: {
         type: String,

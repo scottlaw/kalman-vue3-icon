@@ -14,7 +14,7 @@
       >
         <component
           :is="iconComponentName"
-          :size="36"
+          size="2rem"
         />
         <div>{{iconComponentName}}</div>
       </li>
@@ -61,45 +61,48 @@ function copyName(name: any) {
   margin-top: 60px;
 }
 *{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  }
-  body{
-    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-  }
-  .container {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-  }
-  .wrapper {
-    list-style: none;
-    display: flex;
-    flex-flow: wrap;
-    margin: 0;
-    padding: 15px 0;
-  }
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    height: 140px;
-    padding: 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    color: #486491;
-    font-size: 14px;
-    transition: background-color 0.2s;
-  }
-  .item:hover{
-    background-color: #e7ecf3;
-  }
-  .item svg{
-    margin-bottom: 12px;
-  }
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body{
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+}
+.container {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.wrapper {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  margin: 0;
+  padding: 15px 0;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  padding: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #486491;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+.item:hover{
+  background-color: #e7ecf3;
+}
+.item svg{
+  margin-bottom: 12px;
+}
+.kalman-icon {
+  display: inline-block;
+}
 </style>
