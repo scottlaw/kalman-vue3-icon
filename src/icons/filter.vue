@@ -9,7 +9,7 @@
   <script>
   import { defineComponent } from 'vue'
   export default defineComponent({
-    name: "IconFilter",
+    name: "Filter",
     props: {
       size: {
         type: Number,

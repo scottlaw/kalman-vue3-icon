@@ -30,7 +30,7 @@ const getElementCode = (ComponentName, attrs, svgCode) => `
   <script>
   import { defineComponent } from 'vue'
   export default defineComponent({
-    name: "Icon${ComponentName}",
+    name: "${ComponentName}",
     props: {
       size: {
         type: Number,

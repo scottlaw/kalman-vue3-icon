@@ -9,7 +9,7 @@
   <script>
   import { defineComponent } from 'vue'
   export default defineComponent({
-    name: "IconCircle",
+    name: "Circle",
     props: {
       size: {
         type: Number,
