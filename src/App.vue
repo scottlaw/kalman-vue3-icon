@@ -87,12 +87,13 @@ function copyName(name: any) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     padding: 20px;
     border-radius: 6px;
     cursor: pointer;
     color: #486491;
+    font-size: 14px;
     transition: background-color 0.2s;
   }
   .item:hover{
